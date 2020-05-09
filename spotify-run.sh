@@ -1,5 +1,5 @@
 #!/bin/bash
-#spotify uri of your playlist
+#spotify uri of playlist you want to play
 $SPOTIFY_URI="spotify:show:1410RabA4XOqO6IV8p0gYF"
 
 #input format computer time "HH:MM"
@@ -21,11 +21,9 @@ echo "See you at $1!"
 
 sudo rtcwake -m mem -t $DESIRED &
 
+sleep 10
 
 echo "Good morning $USER!"
-
-
-sleep 10
 
 spotify --uri=$SPOTIFY_URI 1>/dev/null 2>&1 &
 
@@ -35,4 +33,4 @@ dbus-send \
     --print-reply \
     --dest=org.mpris.MediaPlayer2.spotify \
     /org/mpris/MediaPlayer2 \
-    org.mpris.MediaPlayer2.Player.PlayPause
+    org.mpris.MediaPlayer2.Player.PlayPause >/dev/null
