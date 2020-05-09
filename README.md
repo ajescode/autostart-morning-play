@@ -1,4 +1,4 @@
-# spotify-schedule-autostart
+# Spotify Wakeup autostart
 Bash script to sleep system and play spotify automatically at specified time.
 
 
