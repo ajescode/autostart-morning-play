@@ -1,5 +1,5 @@
 # spotify-schedule-autostart
-Bash script to sleep system and play spotify automatically after specified period
+Bash script to sleep system and play spotify automatically at specified time.
 
 
 ## How to use it?
