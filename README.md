@@ -18,3 +18,5 @@ sh spotify-run.sh "8:00"
 ```
 
 You can specify time of running only 1 day in advance (24h format).
+
+Running with sudo is bugged. Trying to work around this problem.
