@@ -1,8 +1,8 @@
 #!/bin/bash
-#spotify uri of playlist you want to play
-$SPOTIFY_URI="spotify:show:1410RabA4XOqO6IV8p0gYF"
+# spotify uri of playlist you want to play
+SPOTIFY_URI="spotify:playlist:37i9dQZF1DX71VcjjnyaBQ"
 
-#input format computer time "HH:MM"
+# input format computer time "HH:MM"
 if [ $# -lt 1 ]; then
     echo "Usage: add parameter HH:MM"
     exit
@@ -25,7 +25,9 @@ sleep 10
 
 echo "Good morning $USER!"
 
-spotify --uri=$SPOTIFY_URI 1>/dev/null 2>&1 &
+sleep 5
+
+spotify --uri="$SPOTIFY_URI" 1>/dev/null 2>&1 &
 
 sleep 5
 
